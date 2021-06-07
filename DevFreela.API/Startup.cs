@@ -35,7 +35,7 @@ namespace DevFreela.API
         public void ConfigureServices(IServiceCollection services)
         {
             var connectionString = Configuration.GetConnectionString("DevfreelaCs");
-            services.AddDbContext<IRepositoryProject>(options => options.UseSqlServer(connectionString));
+            services.AddDbContext<DevFreelaDbContext>(options => options.UseSqlServer(connectionString));
 
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IProjectRepository, ProjectRepository>();

@@ -1,16 +1,13 @@
 ﻿
 using DevFreela.Core.Entities;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
 using System.Reflection;
-using System.Text;
 
 namespace DevFreela.Infrastructure.Persistence
 {
-    public class IRepositoryProject : DbContext
+    public class DevFreelaDbContext : DbContext
     {
-        public IRepositoryProject(DbContextOptions<IRepositoryProject> options) : base(options)
+        public DevFreelaDbContext(DbContextOptions<DevFreelaDbContext> options) : base(options)
         {
            
         }

@@ -1,8 +1,5 @@
 ﻿using DevFreela.Application.Commands.CreateComment;
 using FluentValidation;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace DevFreela.Application.Validators
 {

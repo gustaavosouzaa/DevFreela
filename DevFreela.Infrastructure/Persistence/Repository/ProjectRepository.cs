@@ -11,10 +11,10 @@ namespace DevFreela.Infrastructure.Persistence.Repository
 {
     public class ProjectRepository : IProjectRepository
     {
-        private readonly IRepositoryProject _dbContext;
+        private readonly DevFreelaDbContext _dbContext;
         private readonly string _connectionString;
 
-        public ProjectRepository(IRepositoryProject dbContext, IConfiguration configuration)
+        public ProjectRepository(DevFreelaDbContext dbContext, IConfiguration configuration)
         {
             _dbContext = dbContext;
             _connectionString = configuration.GetConnectionString("DevFreelaCs");
